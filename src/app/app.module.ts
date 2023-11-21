@@ -7,13 +7,15 @@ import { FormsModule } from '@angular/forms';  // Import FormsModule
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
 import { HealthquizComponent } from './healthquiz/healthquiz.component';
 import { ExerciceRoutineComponent } from './exercice-routine/exercice-routine.component';
+import { MealplansComponent } from './mealplans/mealplans.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BmiCalculatorComponent,
     HealthquizComponent,
-    ExerciceRoutineComponent
+    ExerciceRoutineComponent,
+    MealplansComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,142 @@
+
+<div class="app-container"> 
+<h2>Meal Plans</h2>
+
+<div *ngIf="!showProgramDetails">
+    <div class="cards-container">
+        <div class="card" (click)="selectProgram('weight-gain')">
+             <div class="card-body">
+                <h3 class="card-title">Weight-gain Program</h3>
+                <p class="card-text">In this card, you can find healthy foods to gain weight</p>
+             </div>
+        </div>
+   
+      <div class="card" (click)="selectProgram('weight-loss')">
+             <div class="card-body">
+                     <h3 class="card-title">Weight-Loss Program</h3>
+                     <p class="card-text">In this card, you can find healthy foods to lose weight</p>
+             </div>
+    </div>
+</div>
+
+        <ng-container *ngIf="showProgramDetails;">
+            <div *ngIf="selectedProgram === 'weight-gain'">
+
+        <h2>Food Program 1</h2>
+  <p>Breakfast (706 calories)</p>
+  <ul>
+    <li>2 servings Vegan Freezer Breakfast Burritos</li>
+    <li>1 cup strawberries</li>
+  </ul>
+  <p>A.M. Snack (246 calories)</p>
+  <ul>
+    <li>1 serving Almond-Honey Power Bar</li>
+  </ul>
+  <p>Lunch (649 calories)</p>
+  <ul>
+    <li>2 servings Vegetable & Tuna Pasta Salad</li>
+    <li>1 cup mango chunks</li>
+  </ul>
+  <p>P.M. Snack (200 calories)</p>
+  <ul>
+    <li>1 large apple</li>
+    <li>1 Tbsp. natural peanut butter</li>
+  </ul>
+  <p>Dinner (715 calories)</p>
+  <ul>
+    <li>1 serving Sheet-Pan Maple-Mustard Pork Chops and Carrots</li>
+    <li>1 1/2 cups Easy Brown Rice</li>
+  </ul>
+  <p>Daily Totals: 2,516 calories, 105 g protein, 343 g carbohydrates, 46 g fiber, 88 g fat, 2,557 mg sodium</p>
+  <p>To make it 2,000 calories: Omit the peanut butter from the P.M. snack and omit the rice from dinner.</p>
+  <p>To make it 3,000 calories: Add an extra Almond-Honey Power Bar to the A.M. snack, add an extra 2 Tbsp. peanut butter to the P.M. snack, and add an extra ½ cup brown rice to dinner.</p>
+
+  <h2>Food Program 2</h2>
+  <p>Breakfast (430 calories)</p>
+  <ul>
+    <li>1 serving Raspberry Peach Mango Smoothie Bowl</li>
+    <li>1 hard-boiled egg</li>
+  </ul>
+  <p>A.M. Snack (192 calories)</p>
+  <ul>
+    <li>15 baby carrots</li>
+    <li>3 Tbsp. hummus</li>
+    <li>1 medium orange</li>
+  </ul>
+  <p>Lunch (648 calories)</p>
+  <ul>
+    <li>1 serving Roasted Butternut Squash & Root Vegetables with Cauliflower Gnocchi</li>
+    <li>1 slice whole-wheat toast with 1 tsp. unsalted butter</li>
+  </ul>
+  <p>P.M. Snack (265 calories)</p>
+  <ul>
+    <li>1 serving Homemade Microwave Popcorn</li>
+    <li>1 large banana</li>
+    <li>8 unsalted almonds</li>
+  </ul>
+  <p>Dinner (951 calories)</p>
+  <ul>
+    <li>2 servings Philly Cheese Steak Sloppy Joes</li>
+    <li>2 cups fresh spinach & 1 cup shredded carrots topped with ½ Tbsp. olive oil & ½ Tbsp. balsamic vinegar</li>
+  </ul>
+  <p>Daily Totals: 2,486 calories, 120 g protein, 298 g carbohydrates, 64 g fiber, 98 g fat, 2,470 mg sodium</p>
+  <br><p>To make it 2,000 calories: Omit the hard-boiled egg at breakfast, omit the hummus at the A.M. snack, omit the toast and butter at lunch, and omit the banana and almonds in the P.M. snack.</p>
+  <br> <p>To make it 3,000 calories: Add another hard-boiled egg at breakfast, add 6 whole-wheat crackers and another tablespoon hummus at A.M. snack, and add dinner dessert of 8 oz. 2% plain Greek yogurt with 1 Tbsp. honey & 1 cup strawberries.</p>
+    </div>   
+    <!--weight loss-->
+    <div *ngIf="selectedProgram === 'weight-loss'">        
+            <h2>Weight-Loss Program 1</h2>
+            <p>Breakfast (300 calories)</p>
+            <ul>
+              <li>1 cup oatmeal with berries</li>
+              <li>1 boiled egg</li>
+            </ul>
+            <p>Lunch (400 calories)</p>
+            <ul>
+              <li>Grilled chicken breast with mixed vegetables</li>
+              <li>Side salad with light dressing</li>
+            </ul>
+            <p>Snack (150 calories)</p>
+            <ul>
+              <li>Yogurt with sliced almonds</li>
+            </ul>
+            <p>Dinner (450 calories)</p>
+            <ul>
+              <li>Baked salmon with quinoa and steamed broccoli</li>
+            </ul>
+            <p>Evening Snack (100 calories)</p>
+            <ul>
+              <li>Cucumber slices with hummus</li>
+            </ul>
+          </div>
+        
+          <div class="program">
+            <h2>Weight-Loss Program 2</h2>
+            <p>Breakfast (250 calories)</p>
+            <ul>
+              <li>Spinach and mushroom omelet</li>
+              <li>1 slice of whole-grain toast</li>
+            </ul>
+            <p>Lunch (350 calories)</p>
+            <ul>
+              <li>Turkey wrap with lettuce, tomato, and whole-wheat tortilla</li>
+              <li>Carrot sticks with Greek yogurt dip</li>
+            </ul>
+            <p>Snack (100 calories)</p>
+            <ul>
+              <li>Fresh fruit salad</li>
+            </ul>
+            <p>Dinner (400 calories)</p>
+            <ul>
+              <li>Grilled chicken breast with roasted sweet potatoes and green beans</li>
+            </ul>
+            <p>Evening Snack (150 calories)</p>
+            <ul>
+              <li>Low-fat cottage cheese with sliced peaches</li>
+            </ul>
+            
+    </div>
+    
+    
+  
+  
