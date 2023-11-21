@@ -1,0 +1,90 @@
+<div class="app-container">
+    <h2>Fitness Programs</h2>
+
+    <div *ngIf="!selectedProgram; else programDetails" class="cards-container">  
+    <div class="card" (click)="selectProgram('entry-level')">
+      <h3>Entry Level Program</h3>
+      <p>A beginner-friendly fitness program to kickstart your fitness journey.</p>
+      <p>Duration: 30 minutes</p>
+    </div>
+  
+    <div class="card" (click)="selectProgram('intermediate-level')">
+      <h3>Intermediate Level Program</h3>
+      <p>An intermediate fitness program to take your fitness to the next level.</p>
+      <p>Duration: 45 minutes</p>
+    </div>
+  
+    <div class="card" (click)="selectProgram('advanced-level')">
+      <h3>Advanced Level Program</h3>
+      <p>An advanced fitness program for experienced individuals seeking a challenge.</p>
+      <p>Duration: 60 minutes</p>
+    </div>
+</div>
+<ng-template #programDetails>
+
+    <!-- Entry-level -->
+    <div *ngIf="selectedProgram === 'entry-level'">
+        <div>
+            <h2>Entry Level</h2>
+            <p>Below is an easy-to-follow, 1-week exercise program that doesn’t require equipment and will only take you 30 minutes a day to complete.<br>
+            
+            This program can be adjusted to your fitness level and made as challenging as you want.
+            </p>
+            <ul>
+                <li>Monday: 40-minute moderate-pace jog or brisk walk.</li>
+                <li>Tuesday: Rest day.</li>
+                <li>Wednesday: Walk briskly for 10 minutes. Then, complete the following circuits, resting 1 minute after each set but not between exercises. Stretch afterward.<br>
+                    Circuit #1: 3 sets alternating 10 lunges for each leg, 10 pushups, 10 situps
+                    <br> Circuit #2: 3 sets alternating <br>10 chair-dips<br> 10 jumping jacks  <br>10 air squats</li>
+                <li>Thursday: Rest day.</li>
+                <li>Friday: 30-minute bike ride or moderate-pace jog.</li>
+                <li>Saturday: Rest day.</li>
+                <li>Sunday: Run, jog, or take a long walk for 40 minutes.</li>
+            </ul>
+            <p>The 1-week program above is just a simple sample to get you started. For more workout ideas and plans, check out the following links:</p>
+            
+            <ul> 
+                <li>20-minute workout for beginners</li>
+                <li>30 moves to make the most of your at-home workout for various skill levels </li>
+                <li>6 low impact cardio exercises in 20 minutes or less</li>
+            </ul>
+        </div>  
+    </div>
+
+    <!-- Intermediate Level -->
+    <div *ngIf="selectedProgram === 'intermediate-level'">
+        <div>
+            <h2>Intermediate Level</h2>
+            <p>Our 8-week muscle-building plan is an intermediate-level workout guide that will require you to invest 45 minutes a day for 5 days a week.<br> Since our guide is an intermediate fitness level plan, you must be aware of the exercise positions and the gym gear to be used to avoid straining or spraining your joints.</p>
+            <h4>Workout Program</h4>
+
+            <ul>
+                <li><strong>Monday:</strong> Chest, Triceps, and Shoulders</li>
+                <li><strong>Tuesday:</strong> Back and Biceps</li>
+                <li><strong>Wednesday:</strong> Legs</li>
+                <li><strong>Thursday:</strong> Chest, Shoulders, and Triceps</li>
+                <li><strong>Friday:</strong> Back and Biceps</li>
+                <li><strong>Saturday:</strong> Active Rest Day</li>
+                <li><strong>Sunday:</strong> Active Rest Day</li>
+            </ul>
+        </div>
+    </div>
+
+    <div *ngIf="selectedProgram === 'advanced-level'">
+        <h1>Advanced Level</h1>
+
+  <p>Instructions for the full week while 1hour of advanced training are listed below. Five of those days are lifting days and two are rest days. As indicated, however, you should stay active on rest days.</p>
+
+  <ul>
+    <li><strong>Day 1:</strong> Chest</li>
+    <li><strong>Day 2:</strong> Back and Core</li>
+    <li><strong>Day 3:</strong> Rest</li>
+    <li><strong>Day 4:</strong> Shoulders and Traps</li>
+    <li><strong>Day 5:</strong> Legs</li>
+    <li><strong>Day 6:</strong> Arms</li>
+    <li><strong>Day 7:</strong> Rest</li>
+  </ul>
+    </div>
+</ng-template>
+
+  </div>

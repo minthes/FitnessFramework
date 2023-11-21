@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';  // Import FormsModule
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
 import { HealthquizComponent } from './healthquiz/healthquiz.component';
+import { ExerciceRoutineComponent } from './exercice-routine/exercice-routine.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BmiCalculatorComponent,
-    HealthquizComponent
+    HealthquizComponent,
+    ExerciceRoutineComponent
   ],
   imports: [
     BrowserModule,
