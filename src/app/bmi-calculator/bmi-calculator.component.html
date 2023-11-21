@@ -1,17 +1,21 @@
 <!-- bmi-calculator.component.html -->
-<div>
-    <h2>BMI Calculator</h2>
-    <div>
-      <label for="weight">Weight (kg): </label>
-      <input type="number" [(ngModel)]="weight" name="weight" />
-    </div>
-    <div>
-      <label for="height">Height (m): </label>
-      <input type="number" [(ngModel)]="height" name="height" />
-    </div>
-    <button (click)="calculateBMI()">Calculate BMI</button>
-    <div *ngIf="bmiResult !== null">
+<div class="app-container">
+<div class="bmi-calculator-container">
+  <h2>BMI Calculator</h2>
+  <div class="input-container">
+    <label for="weight">Weight (kg): </label>
+    <input type="number" [(ngModel)]="weight" name="weight" />
+  </div>
+  <div class="input-container">
+    <label for="height">Height (m): </label>
+    <input type="number" [(ngModel)]="height" name="height" />
+  </div>
+  <button (click)="calculateBMI()">Calculate BMI</button>
+  <div *ngIf="bmiResult !== null" class="result-container">
+    <div class="result-box">
       <p>Your BMI is: {{ bmiResult | number:'1.2-2' }}</p>
     </div>
   </div>
-  
+</div>
+</div>
+

@@ -1,0 +1,66 @@
+/* bmi-calculator.component.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin to avoid unwanted spacing */
+  }
+  
+  .bmi-calculator-container {
+    text-align: center;
+  }
+  
+  .input-container {
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e4a0aa;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .result-box {
+    color: #fff; /* Set the text color to white */
+    max-width: 300px;
+    margin: 0 auto;
+ 
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #e4a0aa; /* Add a background color to make it visible */
+  }
+
+    
+  button {
+    background-color: #e4a0aa;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    align-self: flex-end; /* Align the button to the flex-end (bottom) */
+  }
+  
+  button:hover {
+    background-color: #8a3b47;
+  }
+  
+  

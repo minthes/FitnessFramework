@@ -1,0 +1,78 @@
+/* Add the following styles to your existing CSS or create a new CSS file */
+
+.quiz-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .question-box {
+    border: 1px solid #e4a0aa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    max-width: 400px;
+    width: 100%; /* Use 100% width to fill the container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-bottom: 20px; /* Add margin at the bottom */
+  }
+  
+  .question-header {
+    background-color: #a03e58;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+    color: white; /* Set the text color to white */
+  }
+  
+  /* Apply styles to the quiz options */
+.option {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .option input {
+    margin-right: 10px;
+  }
+  
+  .option label {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style radio button appearance */
+  .option input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e4a0aa;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .option input[type="radio"]:checked {
+    background-color: #e4a0aa;
+  }
+  
+  button {
+    background-color: #a03e58;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    align-self: flex-end; /* Align the button to the flex-end (bottom) */
+  }
+  
+  button:hover {
+    background-color: #e4a0aa;
+  }
+  
+  
+  
+  

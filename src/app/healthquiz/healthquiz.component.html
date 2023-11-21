@@ -1,0 +1,37 @@
+<div class="app-container">
+    <div class="quiz-container">
+      <h2>Health Quiz</h2>
+  
+      <div class="question-box" *ngIf="showQuestionBox">
+        <div class="question-header">
+          <p>{{ currentQuestionIndex + 1 }}. {{ currentQuestion.text }}</p>
+        </div>
+        <div *ngFor="let option of currentQuestion.options; let j = index" class="option">
+          <input
+            type="radio"
+            [id]="'q' + currentQuestionIndex + 'option' + j"
+            [name]="'q' + currentQuestionIndex"
+            [(ngModel)]="selectedOptions[currentQuestionIndex]"
+            [value]="option"
+          />
+          <label [for]="'q' + currentQuestionIndex + 'option' + j">{{ option }}</label>
+        </div>
+  
+        <button *ngIf="currentQuestionIndex !== questions.length - 1" (click)="nextQuestion()">Next</button>
+        <button *ngIf="currentQuestionIndex === questions.length - 1" (click)="submitQuiz()">Submit</button>
+      </div>
+  
+      <div *ngIf="!showQuestionBox" class="thank-you-box">
+        <p>Thank you for completing the Health Quiz!</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  

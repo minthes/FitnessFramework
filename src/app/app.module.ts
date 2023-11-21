@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';  // Import FormsModule
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
+import { HealthquizComponent } from './healthquiz/healthquiz.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BmiCalculatorComponent
+    BmiCalculatorComponent,
+    HealthquizComponent
   ],
   imports: [
     BrowserModule,

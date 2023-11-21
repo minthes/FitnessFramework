@@ -3,15 +3,21 @@
 
 /* Apply a modern sans-serif font */
 body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/018/991/311/non_2x/soft-gradient-abstract-in-pastel-white-and-pink-colors-gradient-background-blurred-gradient-texture-decorative-element-wallpaper-vector.jpg');
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+  }
+  .app-container {
+    background-color: rgba(255, 255, 255, 0.2); /* Set the background color with transparency */
+    border-radius: 10px;
+    padding: 40px; /* Increase padding for more space inside the container */
+    margin: 10px; /* Reduce margin for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a subtle shadow for depth */
+    height: 90%;
   }
   
-  /* Add a subtle box shadow to give depth */
-  body {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
   
   /* Apply a smooth transition for hover effects */
   a, button {
@@ -21,11 +27,11 @@ body {
   /* Style links with a modern color scheme and remove underlines */
   a {
     text-decoration: none;
-    color: #3498db; /* Blue color, you can customize this */
+    color: #a0cae4; /* Blue color, you can customize this */ 
   }
   
   a:hover {
-    background-color: #3498db;
+    background-color: #e4a0aa;
     color: #fff;
   }
   
@@ -35,16 +41,79 @@ body {
   }
 
   /* Apply a common style to all buttons */
-button {
-    padding: 8px 16px; /* Adjust padding as needed */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease;
+  button {
+    background-color: #e4a0aa;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    align-self: flex-end; /* Align the button to the flex-end (bottom) */
   }
   
   button:hover {
-    background-color: #4682B4; /* Slightly darker blue on hover, you can customize this */
+    background-color: #a03e58;
+  }
+  
+  button:hover {
+    background-color: #a03e58; /* Slightly darker blue on hover, you can customize this */
     color: #fff;
   }
+  .bmi-calculator-container {
+    text-align: center;
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .result-box {
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #e4a0aa; /* Add a background color to make it visible */
+  }
+  .input-container {
+    margin: 10px 0;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-container input {
+    padding: 8px;
+    border: 1px solid #ccc; /* Adjust border color as needed */
+    border-radius: 5px;
+  }
+
+  /* Navbar styles */
+.navbar {
+    background-color: #e4a0aa !important; /* Light blue color for the navbar */
+  }
+  
+  .navbar-brand {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    color: #000; /* Black text color for the brand */
+    font-weight: bold; /* Adjust the font weight as needed */
+    border-radius: 8px; /* Adjust the border-radius as needed */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff !important; /* White text color for links */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #a03e58 !important; /* Slightly darker blue on hover for links */
+    color: #fff !important;
+  }
+  
   
   
 
